@@ -1,0 +1,146 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+/*Form & Auth Styling */
+.form-group { margin-bottom: 15px; display: flex; flex-direction: column; }
+
+input, select { 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #cbd5e1; 
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button { 
+    padding: 12px; 
+    cursor: pointer; 
+    background: #2563eb; 
+    color: white; 
+    border: none; 
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button:hover { background: #1d4ed8; }
+.btn-danger { background: #ef4444; margin-top: 10px; }
+.btn-danger:hover { background: #dc2626; }
+.hidden { display: none; }
+
+/*Post Job Container */
+#post-job-container {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Categorized Table Styling */
+.category-section {
+    margin-bottom: 35px;
+}
+
+/* Category Headers */
+.status-header {
+    padding: 12px 15px;
+    border-radius: 6px 6px 0 0;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    border-left: 6px solid #64748b;
+}
+
+/* Table */
+.job-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.job-table th, .job-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.job-table th {
+    background-color: #f8fafc;
+    color: #64748b;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.job-table tr:last-child td { border-bottom: none; }
+.job-table tr:hover { background-color: #f1f5f9; }
+
+.note-text {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+#toggle-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #2563eb;
+    text-decoration: none;
+}
+/* Container for the buttons to keep them side-by-side */
+.job-table td:last-child {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* Base button styling */
+.edit-btn, .delete-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Edit Button Styling (Blue/Indigo) */
+.edit-btn {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #4338ca;
+}
+
+/* Delete Button Styling (Red) */
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Feedback when clicking */
+.edit-btn:active, .delete-btn:active {
+    transform: scale(0.95);
+}
