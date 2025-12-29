@@ -1,1 +1,1 @@
-export const API_URL = 'https://job-tracker-app-hgjl.onrender.com';
+export const API_URL = 'https://job-tracker-app-hgjl.onrender.com/';
