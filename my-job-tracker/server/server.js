@@ -64,7 +64,7 @@ app.post('/login', async (req, res) => {
 });
 
 // --- JOB ROUTES ---
-app.use('/jobs', jobRoutes);
+//app.use('/jobs', jobRoutes);
 
 const PORT = process.env.PORT;
 
