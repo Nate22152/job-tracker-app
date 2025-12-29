@@ -16,6 +16,8 @@ const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_ANON_KEY;
 export const supabase = createClient(supabaseUrl, supabaseKey);
 
+console.log('SUPABASE_URL exists:', !!process.env.SUPABASE_URL);
+console.log('SUPABASE_KEY exists:', !!process.env.SUPABASE_ANON_KEY)
 
 // Registeration
 app.post('/register', async (req, res) => {
@@ -65,6 +67,8 @@ app.post('/login', async (req, res) => {
 app.use('/jobs', jobRoutes);
 
 const PORT = process.env.PORT;
+
+
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is live on port ${PORT}`);
