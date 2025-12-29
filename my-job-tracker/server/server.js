@@ -64,7 +64,7 @@ app.post('/login', async (req, res) => {
 // --- JOB ROUTES ---
 app.use('/jobs', jobRoutes);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is live on port ${PORT}`);
